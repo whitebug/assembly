@@ -9,6 +9,6 @@ section	.text
 again:	mov [edi], al	; put the symbol to array element
 	inc edi		; select the next element of the array
 	dec ecx		; decrease the counter
-	jnz again	; if there is not null, fire the loop again
+	jnz again	; if there is non zero, fire the loop again
 	
 		
