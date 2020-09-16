@@ -72,4 +72,10 @@
 %endif
 %endmacro
 		
+%ifdef OS_FREEBSD
+openwr_flags equ 601h
+%else					; Linux
+openwr_flags equ 241h
+%endif
+
 
